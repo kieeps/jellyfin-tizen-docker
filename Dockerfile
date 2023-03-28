@@ -5,6 +5,7 @@ RUN DEBIAN_FRONTEND=noninteractive TZ=Europe/Stockholm apt-get -y install tzdata
 RUN apt-get -qq install -y git openssh-server
 RUN apt-get install -y sudo
 RUN apt-get install -y curl
+RUN apt-get install -y iputils-ping
 RUN apt-get -y install expect
 
 # install node JS & update
