@@ -50,7 +50,7 @@ RUN sed -i 's/\/home\/jellyfin\/tizen-studio-data\/keystore\/author\/Jellyfin.pw
 RUN sed -i 's/\/home\/jellyfin\/tizen-studio-data\/tools\/certificate-generator\/certificates\/distributor\/tizen-distributor-signer.pwd/tizenpkcs12passfordsigner/' /home/jellyfin/tizen-studio-data/profile/profiles.xml
 
 # Git clone apps
-RUN git clone https://github.com/jellyfin/jellyfin-web.git /home/jellyfin/jellyfin-web
+RUN git clone -b release-10.8.z https://github.com/jellyfin/jellyfin-web.git /home/jellyfin/jellyfin-web
 RUN git clone https://github.com/jellyfin/jellyfin-tizen.git /home/jellyfin/jellyfin-tizen
 
 # Build apps
